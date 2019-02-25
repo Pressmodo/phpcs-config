@@ -22,11 +22,11 @@ $ ./vendor/bin/phpcs .
 If relying on Composer, edited the `composer.json` file by adding the following:
 
 ```json
-	"scripts": {
-		"lint": [
-			"phpcs ."
-		],
-	}
+"scripts": {
+	"lint": [
+		"phpcs ."
+	],
+}
 ```
 
 Then lint via:
