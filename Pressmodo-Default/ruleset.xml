@@ -68,6 +68,9 @@
 		<type>warning</type>
 	</rule>
 
+	<exclude name="WordPress.WhiteSpace.ControlStructureSpacing"/>
+	<exclude name="WordPress.PHP.YodaConditions" />
+
 	<!-- Loads the PHP Compatibility ruleset. -->
 	<rule ref="PHPCompatibilityWP" />
 
