@@ -53,6 +53,11 @@
 
 		<!-- Comment punctuation doesn't matter -->
 		<exclude name="Squiz.Commenting.FunctionComment.ParamCommentFullStop"/>
+
+		<exclude name="WordPress.WhiteSpace.ControlStructureSpacing"/>
+
+		<!-- Ignore yoda conditions -->
+		<exclude name="WordPress.PHP.YodaConditions" />
 	</rule>
 
 	<!-- Sets the minimum supported WP version to 4.7, which is over a year old. -->
@@ -67,6 +72,10 @@
 	<rule ref="WordPress.WP.GlobalVariablesOverride.OverrideProhibited">
 		<type>warning</type>
 	</rule>
+
+	<!-- Add in some extra rules from other standards. -->
+	<rule ref="Generic.CodeAnalysis.UnusedFunctionParameter"/>
+	<rule ref="Generic.Commenting.Todo"/>
 
 	<!-- Loads the PHP Compatibility ruleset. -->
 	<rule ref="PHPCompatibilityWP" />
