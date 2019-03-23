@@ -6,7 +6,7 @@ Composer library to provide drop in installation and configuration of [WPCS](htt
 Install the library via Composer:
 
 ```bash
-$ composer require --dev pressmodo/phpcs-composer:dev-master
+$ composer require --dev pressmodo/phpcs-config:dev-master
 ```
 
 That's it!
@@ -23,9 +23,8 @@ If relying on Composer, edited the `composer.json` file by adding the following:
 
 ```json
 "scripts": {
-	"lint": [
-		"phpcs ."
-	],
+	"lint": "phpcs .",
+	"lint-fix": "phpcbf ."
 }
 ```
 
@@ -42,6 +41,6 @@ Some IDE integrations of PHPCS fail to register the `Pressmodo-Default` ruleset.
 ```xml
 <?xml version="1.0"?>
 <ruleset name="Project Rules">
-	<rule ref="pressmodo-Default" />
+  <rule ref="Pressmodo-Default" />
 </ruleset>
 ```
